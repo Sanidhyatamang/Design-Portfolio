@@ -1,7 +1,11 @@
 import React from 'react';
 
 const designs = [
-
+{
+    id: 7,
+    title: 'Reimagining your favourite hits',
+    image: '/images/design7.png',
+  },
   {
     id: 6,
     title: 'Throttle Fury',
