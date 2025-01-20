@@ -1,11 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const designs = [
-{
-    id: 7,
-    title: 'Reimagining your favourite hits',
-    image: '/images/design7.png',
-  },
+
   {
     id: 6,
     title: 'Throttle Fury',
@@ -45,14 +41,17 @@ const designs = [
 ];
 
 const Portfolio = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
-    <section className="py-20  text-neutral-300">
+    <section className="py-20 text-neutral-300">
       <h2 className="text-center text-4xl mb-20 font-thin">My Portfolio</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  container mx-auto px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 container mx-auto px-8">
         {designs.map((design) => (
           <div
             key={design.id}
-            className="rounded-lg overflow-hidden shadow-lg  hover:scale-105 transition-transform"
+            className="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer"
+            onClick={() => setSelectedImage(design.image)}
           >
             <img
               src={design.image}
@@ -65,6 +64,28 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)} // Close the modal on clicking outside
+        >
+          <div className="relative">
+            <img
+              src={selectedImage}
+              alt="Selected Design"
+              className="max-w-full max-h-screen rounded-lg"
+            />
+            <button
+              className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full p-2"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
