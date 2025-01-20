@@ -8,6 +8,7 @@ const designs = [
   { id: 3, title: 'Echoes of Yesterday: A Journey Back to School Days', image: '/images/design3.png' },
   { id: 1, title: 'Threads of Elegance', image: '/images/design1.png' },
   { id: 2, title: 'Your Digital Welcome Mat', image: '/images/design2.png' },
+  // Add more designs as needed
 ];
 
 const Portfolio = () => {
