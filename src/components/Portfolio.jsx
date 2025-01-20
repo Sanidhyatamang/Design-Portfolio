@@ -3,6 +3,45 @@ import React, { useState } from 'react';
 const designs = [
 
   {
+    id: 13,
+    title: '',
+    image: '/images/design13.png',
+  },
+  {
+    id: 12,
+    title: '',
+    image: '/images/design12.png',
+  },
+
+  {
+    id: 11,
+    title: '',
+    image: '/images/design11.png',
+  },
+
+  {
+    id: 10,
+    title: '',
+    image: '/images/design10.png',
+  },
+  {
+    id: 9,
+    title: '',
+    image: '/images/design9.png',
+  },
+
+  {
+    id: 8,
+    title: '',
+    image: '/images/design8.png',
+  },
+
+  {
+    id: 7,
+    title: '',
+    image: '/images/design7.png',
+  },
+  {
     id: 6,
     title: 'Throttle Fury',
     image: '/images/design6.png',
