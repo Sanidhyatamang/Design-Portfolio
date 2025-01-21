@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
 const designs = [
-  { id: 13, title: '', image: '/images/design13.png' },
-  { id: 12, title: '', image: '/images/design12.png' },
-  { id: 11, title: '', image: '/images/design11.png' },
-  { id: 10, title: '', image: '/images/design10.png' },
-  { id: 9, title: '', image: '/images/design9.png' },
-  { id: 8, title: '', image: '/images/design8.png' },
+  { id: 14, title: 'Elegant Wedding Theme Design', image: '/images/design14.png' },
+  { id: 13, title: 'Shy Love Story Illustration', image: '/images/design13.png' },
+  { id: 12, title: 'Amid blossoms and shy glances, love quietly blooms.', image: '/images/design12.png' },
+  { id: 11, title: 'Abstract Expression Face Painting', image: '/images/design11.png' },
+  { id: 10, title: 'Compassionate Veterinary Care Banner', image: '/images/design10.png' },
+  { id: 9, title: 'Urban Veterinary Mural Art', image: '/images/design9.png' },
+  { id: 8, title: 'Dynamic Digital Marketing Banner', image: '/images/design8.png' },
   { id: 7, title: 'Reimagining Your Favorite Hits', image: '/images/design7.png' },
   { id: 6, title: 'Throttle Fury', image: '/images/design6.png' },
   { id: 5, title: "Eagle's Valor: Brave Flight", image: '/images/design5.png' },
