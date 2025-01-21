@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const designs = [
+  { id: 15, title: 'Captivating & Modern Landing Page UI', image: '/images/design15.png' },
   { id: 14, title: 'Elegant Wedding Theme Design', image: '/images/design14.png' },
   { id: 13, title: 'Shy Love Story Illustration', image: '/images/design13.png' },
   { id: 12, title: 'Amid blossoms and shy glances, love quietly blooms.', image: '/images/design12.png' },
