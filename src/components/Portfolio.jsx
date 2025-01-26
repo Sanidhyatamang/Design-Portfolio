@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const designs = [
+  { id: 18, title: 'Radiance of African Elegance', image: '/images/design18.png' },
   { id: 17, title: 'Introducing Creativity Through Design', image: '/images/design17.png' },
   { id: 16, title: 'Tales from the Hidden Realm', image: '/images/design16.png' },
   { id: 15, title: 'Captivating & Modern Landing Page UI', image: '/images/design15.png' },
